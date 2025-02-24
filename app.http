@@ -1,0 +1,19 @@
+POST http://localhost:5000/appointments
+Content-Type: application/json
+
+{
+  "_id": "doc1",
+  "image": "/src/assets/assets_frontend/doc1.png",
+  "speciality": "General physician",
+  "name": "Dr. Richard James",
+  "address": "{\"road_1\":\"17th Cross, Richmond\", \"road_2\":\"Circle, Ring Road, London\"}",
+  "newData": "23 Feb 2025",
+  "newTime": "06:30 PM"
+}
+
+###
+
+GET http://localhost:5000/appointments
+###
+
+DELETE http://localhost:5000/appointments/doc1
